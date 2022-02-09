@@ -1,3 +1,5 @@
+const Buffer = require("buffer-browserify").Buffer;
+
 /**
  * [js-sha3]{@link https://github.com/emn178/js-sha3}
  *
@@ -193,7 +195,7 @@
       if (type === 'object') {
         if (message === null) {
           throw new Error(INPUT_ERROR);
-        } else if (ARRAY_BUFFER && message.constructor === ArrayBuffer) {
+        } else if (ARRAY_BUFFER && (message.constructor === ArrayBuffer || message.constructor === Buffer )) {
           message = new Uint8Array(message);
         } else if (!Array.isArray(message)) {
           if (!ARRAY_BUFFER || !ArrayBuffer.isView(message)) {

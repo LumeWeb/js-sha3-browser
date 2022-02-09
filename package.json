@@ -1,5 +1,5 @@
 {
-  "name": "js-sha3",
+  "name": "@lumeweb/js-sha3-browser",
   "version": "0.8.0",
   "description": "A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 encoding.",
   "main": "src/sha3.js",
