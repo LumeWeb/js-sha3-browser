@@ -35,6 +35,10 @@ You can also install js-sha3 by using Bower.
 For node.js, you can use this command to install:
 
     npm install js-sha3
+    
+### Install Notes
+
+You currently must use nvm to install node 10.* to run `yarn` or `npm install` and use node 16.x or higher to run `yarn build` or `npm run build`
 
 ## Usage
 You could use like this:
