@@ -41,5 +41,9 @@
     "exclude": [
       "tests"
     ]
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "buffer-browserify": "^0.2.5"
   }
 }
